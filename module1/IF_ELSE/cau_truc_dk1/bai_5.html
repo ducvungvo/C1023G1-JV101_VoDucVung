@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemA = +prompt("Nhập điểm kiểm tra");
+    let diemB = +prompt("Nhập điểm thi giữa kỳ");
+    let diemC = +prompt("Nhập điểm thi cuối kỳ");
+    let diemTK = (diemA + diemB + diemC) / 3
+    if (diemA >= 0 && diemB >= 0 && diemC >= 0 && diemA <= 10 && diemB <= 10 && diemC <= 10) {
+        if (diemTK >= 8) {
+            document.write("Học lực loại A");
+        } else if (diemTK < 8 && diemTK >5.5) {
+            document.write("Học lực loại B");
+        } else if (diemTK <= 5.5 && diemTK > 3.5) {
+            document.write("Học lực loại C");
+        } else
+            document.write("Học lực loại D");
+    }else {
+        alert("Nhập sai");
+    }
+</script>
+</body>
+</html>
