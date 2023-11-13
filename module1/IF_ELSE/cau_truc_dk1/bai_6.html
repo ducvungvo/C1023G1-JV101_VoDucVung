@@ -6,7 +6,21 @@
 </head>
 <body>
 <script>
-  let soLuong = +prompt("Nhập số lượng đã bán");
+    let soLuong = +prompt("Nhập số lượng đã bán");
+    if (!(soLuong === parseInt(soLuong) && soLuong >= 0)) {
+        const giaHang = 100000;
+        let doanhThu = soLuong * giaHang;
+        if (soLuong >= 1200)
+            document.write("Hoa hồng nhận được là: " + doanhThu * 0.25 + "Đồng");
+        else if (soLuong >= 800)
+            document.write("hoa hồng nhận được là: " + doanhThu * 0.20 + "Đồng");
+        else if (soLuong >= 500)
+            document.write("hoa hồng nhận được là: " + doanhThu * 0.15 + "Đồng");
+        else if (soLuong >= 300)
+            document.write("hoa hồng nhận được là: " + doanhThu * 0.10 + "Đồng");
+        else
+            document.write("Hoa hồng nhận là : 0");
+    }
 </script>
 </body>
 </html>
