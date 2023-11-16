@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = +prompt("Nhập số điện dã dùng");
+    let phiDien;
+    if (a > 100){
+        phiDien = a*2750;
+    }else if (a > 50 ){
+        phiDien = a*2500;
+    }else if (a >10){
+        phiDien = a*2250;
+    }else {
+        alert("Nhập sai");
+    }
+    document.write("Phí tiền điện đã dùng là: "+phiDien+"VND");
+</script>
+</body>
+</html>

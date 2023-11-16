@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let thuNhap = +prompt("Nhập tiền thu nhập hằng tháng(VND)");
+  let tienThue;
+  if (thuNhap >=50000000 ){
+    tienThue = 0.2 * thuNhap;
+  }else if (thuNhap>=20000000){
+    tienThue = 0.15 * thuNhap;
+  }else if (thuNhap>=10000000){
+    tienThue = 0.1 * thuNhap;
+  }else if (thuNhap >=0){
+    tienThue = 0.05 * thuNhap;
+  }else {
+    alert("Hãy nhập dữ liệu");
+  }
+  document.write("Tiền thuế: "+tienThue+"VND");
+</script>
+</body>
+</html>

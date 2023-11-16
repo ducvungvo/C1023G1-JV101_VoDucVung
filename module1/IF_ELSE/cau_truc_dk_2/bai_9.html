@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checktriangle() {
+        let a = +prompt("Nhập cạnh a");
+        while (a < 0) {
+            a = +prompt("Nhập lại chiều dài cạnh a");
+        }
+        let b = +prompt("Nhập cạnh b");
+        while (b < 0) {
+            b = +prompt("Nhập lại chiều dài cạnh b");
+        }
+        let c = +prompt("Nhập cạnh c");
+        while (c < 0) {
+            c = +prompt("Nhập lại chiều dài cạnh c");
+        }
+        if ((a + b) > c && (b + c) > a && (a + c) > b) {
+            alert("đây là một cạnh tam giác");
+        } else {
+            alert("Không phải là cạnh tam giác");
+        }
+    }
+    checktriangle();
+</script>
+</body>
+</html>
